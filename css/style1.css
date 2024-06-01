@@ -465,6 +465,11 @@ body{
 
 }
 @media (max-width: 1200px) {
+    .navigation{
+        float: right;
+        margin-right: 30px;
+
+    }
     .body-no-scroll {
         overflow: hidden;
     }
@@ -564,7 +569,9 @@ body{
         display: var(--display_flex);
         float: left;
     }
-
+    .menu_list ul{
+        display: none;
+    }
     .menu_list li {
         margin-left: 10px;
         padding: 8px 16px;
