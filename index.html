@@ -12,15 +12,20 @@
 
         function checkWidth() {
             if (document.body.clientWidth < 1200) {
-                document.querySelector('button.btn.btn-primary.navigation').textContent = 'Меню';
+                document.querySelector('button.btn.btn-primary.navigation').classList.remove('show');
+                document.querySelector('button.btn.btn-primary.navigation').classList.add('hide');
+                document.querySelector('menu_stick').classList.add('show');
             }
             else {
-                document.querySelector('button.btn.btn-primary.navigation').textContent = 'Join now';
+
+                document.querySelector('button.btn.btn-primary.navigation').classList.remove('hide');
+                document.querySelector('button.btn.btn-primary.navigation').classList.add('show');
+                document.querySelector('menu_stick').classList.add('hide');
             }
         }
 
         let counter = 0;
-        const button = document.querySelector('button.btn.btn-primary');
+        const button = document.querySelector('.menu_stick');
         if(button){
             button.addEventListener('click', function () {
                 if (counter == 0) {
@@ -29,7 +34,6 @@
                     document.body.classList.add('body-no-scroll');
                     counter++;
                 } else {
-
                     document.querySelector('nav.function').classList.remove('show');
                     document.querySelector('nav.function').classList.add('hide');
                     document.body.classList.remove('body-no-scroll');
@@ -49,17 +53,21 @@
                 <li><a href="#">For Projects</a></li>
                 <li><a href="#">For Investors</a></li>
             </ul>
+            <div class="menu_stick">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <button class="btn btn-primary navigation">Join Now</button>
         </nav>
     </div>
 </header>
-<nav class="function hide">
+<nav class="function show">
     <ul>
         <li><a href="#">For Projects</a></li>
         <li><a href="#">For Investors</a></li>
-        <li><a href="#">For Students</a></li>
+        <li><button class="btn_center  ">Join Now</button></li>
     </ul>
-
 </nav>
 <main>
     <section class="main_content">

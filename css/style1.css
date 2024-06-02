@@ -12,7 +12,10 @@ body{
     width: 100%;
 }
 @media (min-width: 1200px) {
-    .function, .function li ,.function a , .function ul, .hide ,.show{
+
+    .show{
+    }
+    .function, .function li ,.function a , .function ul, .hide {
         display: none;
     }
     .left .btn_left {
@@ -465,10 +468,32 @@ body{
 
 }
 @media (max-width: 1200px) {
+    .btn_center{
+        font-size: 50px;
+        border-radius: 20px;
+        background: #8053FF;
+        padding: 30px;
+        color: #FFFFFF;
+        display:  var(--display_flex);;
+        justify-content: center;
+        position: absolute;
+        font-family: var(--font_Popins);
+    }
+    .menu_stick span {
+        font-family: var(--font_Popins);
+        display: var(--display_flex);
+        justify-content: center;
+        background: blue;
+        margin-top: 10px;
+        height: 2px;
+        z-index: 30;
+        width: 50px;
+        font-size: 50px;
+       margin-right: 20px;
+    }
     .navigation{
         float: right;
         margin-right: 30px;
-
     }
     .body-no-scroll {
         overflow: hidden;
@@ -483,15 +508,9 @@ body{
         width: 100%;
         height: 100%;
         font-size: 50px;
-
-
     }
     .function li{
         padding-top: 200px;
-    }
-    a{
-        text-decoration:none;
-        color: black;
     }
     .function ul{
         list-style-type: none;
@@ -580,7 +599,7 @@ body{
     }
     .menu_list {
         float: right;
-        width: 450px;
+        width: auto;
         height: 90px;
         padding: 10px 10px 10px 10px;
     }
@@ -591,7 +610,7 @@ body{
         padding-top: 5px;
     }
     .container {
-        width: 1200px;
+        width: 800px;
         justify-content: flex-start;
         margin-left: 0px;
         height: 80px;
@@ -608,11 +627,11 @@ body{
     }
     .main_content {
         width:100%;
-
-        display: var(--display_flex);
-        align-items: center;
-        justify-content: center;
         text-align: center;
+        display: var(--display_flex);
+        justify-content: center;
+        align-items: center;
+        width: var(--full_width);
     }
     .main_content img{
         width:100%;
@@ -709,7 +728,11 @@ body{
     .fundraising {
         width:100%;
         display: var(--display_flex);
-        /*justify-content: center;*/
+        font-family: var(--font_Popins);
+        display: var(--display_flex);
+        justify-content: center;
+        align-items: center;
+        width: var(--full_width);
     }
     .deFi {
         padding-left: 10px;
@@ -752,7 +775,10 @@ body{
         padding-bottom: 20px;
         padding: 10px;
         display: var(--display_flex);
+        display: var(--display_flex);
         justify-content: center;
+        align-items: center;
+        width: var(--full_width);
     }
 
     .position__projects {
@@ -762,6 +788,8 @@ body{
 padding-bottom: 20px;
         display: var(--display_flex);
         justify-content: center;
+        align-items: center;
+        width: var(--full_width);
     }
     .about {
         font-family: var(--font_SansSerif);
@@ -769,6 +797,10 @@ padding-bottom: 20px;
         color: #23155B;
         width: 100%;
         padding-top: 100px;
+        display: var(--display_flex);
+        justify-content: center;
+        align-items: center;
+        width: var(--full_width);
     }
     .about__img img {
         margin-left: -17%;
