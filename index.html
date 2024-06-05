@@ -15,8 +15,7 @@
                 document.querySelector('button.btn.btn-primary.navigation').classList.remove('show');
                 document.querySelector('button.btn.btn-primary.navigation').classList.add('hide');
                 document.querySelector('menu_stick').classList.add('show');
-            }
-            else {
+            } else {
 
                 document.querySelector('button.btn.btn-primary.navigation').classList.remove('hide');
                 document.querySelector('button.btn.btn-primary.navigation').classList.add('show');
@@ -26,7 +25,7 @@
 
         let counter = 0;
         const button = document.querySelector('.menu_stick');
-        if(button){
+        if (button) {
             button.addEventListener('click', function () {
                 if (counter == 0) {
                     document.querySelector('nav.function').classList.remove('hide');
@@ -40,7 +39,8 @@
                     counter--;
                 }
             });
-        }});
+        }
+    });
 </script>
 <body>
 <header>
@@ -58,7 +58,7 @@
                 <span></span>
                 <span></span>
             </div>
-            <button class="btn btn-primary navigation">Join Now</button>
+            <button class="btn btn-primary navigation ">Join Now</button>
         </nav>
     </div>
 </header>
@@ -66,7 +66,9 @@
     <ul>
         <li><a href="#">For Projects</a></li>
         <li><a href="#">For Investors</a></li>
-        <li><button class="btn_center  ">Join Now</button></li>
+        <li>
+            <button class="btn_center  ">Join Now</button>
+        </li>
     </ul>
 </nav>
 <main>
@@ -83,11 +85,11 @@
         <div class="position">
             <span class="tittle">In the pipeline</span>
             <ul>
-                <li><a href="#"><img  src="img/image26.png" alt="Harvard"></a></li>
+                <li><a href="#"><img src="img/image26.png" alt="Harvard"></a></li>
                 <li><a href="#"><img src="img/image27.png" alt="Microsoft"></a></li>
-                <li><a href="#"><img  src="img/image28.png" alt="Nasa"></a></li>
-                <li><a href="#"><img  src="img/image29.png" alt="Yale"></a></li>
-                <li><a href="#"><img  src="img/image30.png" alt="PeYoneer"></a></li>
+                <li><a href="#"><img src="img/image28.png" alt="Nasa"></a></li>
+                <li><a href="#"><img src="img/image29.png" alt="Yale"></a></li>
+                <li><a href="#"><img src="img/image30.png" alt="PeYoneer"></a></li>
             </ul>
         </div>
     </section>
@@ -98,7 +100,7 @@
                 in DeFi
             </h2>
             <div class="list_items">
-                <ul >
+                <ul>
                     <li>
                         <div class="position_list">
                             <h2 class="list-number text-colored">1</h2>
@@ -133,7 +135,6 @@
             </div>
         </div>
     </section>
-
     <section class="projects">
         <div class="position__projects">
             <div class="for-projects">
@@ -223,12 +224,12 @@
                 </li>
                 <li>
 
-            </li>
+                </li>
                 <li>
 
                     <div class="position left">
                         <button type="submit" class="btn_left option ">I Need Funding</button>
-                        <button type="submit" class="btn_right option ">Learn More </button>
+                        <button type="submit" class="btn_right option ">Learn More</button>
                     </div>
 
                 </li>
@@ -317,7 +318,7 @@
     </section>
     <section class="sponsor">
         <div class="position">
-            <b> <span class="tittle">Brought to you by DeFiPie in partnership with</span></b>
+            <b> <span class="tittle size">Brought to you by DeFiPie in partnership with</span></b>
             <ul>
                 <li><a href="#"><img img src="img/logoo.png" alt="Harvard"></a></li>
                 <li><a href="#"><img img src="img/logo.png" alt="Microsoft"></a></li>
@@ -358,10 +359,12 @@
                 <input type="text" id="name4">
             </form>
         </div>
+
         <div class="position pleft">
             <button type="submit" class="btn_left option">Send</button>
         </div>
     </div>
+
     <div class="social">
         <div class="social_media">
             <img src="img/Social.png" alt="Harvard">
